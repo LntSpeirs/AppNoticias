@@ -13,7 +13,7 @@ const NoticiasProvider = ({ children }) => {
   useEffect(() => {
     const consultarAPI = async () => {
       const url = `https://newsapi.org/v2/top-headlines?country=us&category=${categoria}&apiKey=${
-        import.meta.env.VITE_API_KEY
+        import.meta.env.VITE_APP_API_KEY
       }`;
 
       const { data } = await axios(url);
@@ -28,7 +28,7 @@ const NoticiasProvider = ({ children }) => {
   useEffect(() => {
     const consultarAPI = async () => {
       const url = `https://newsapi.org/v2/top-headlines?country=us&category=${categoria}&page=${pagina}&apiKey=${
-        import.meta.env.VITE_API_KEY
+        import.meta.env.VITE_APP_API_KEY
       }`;
 
       const { data } = await axios(url);
