@@ -1,11 +1,4 @@
-import {
-  Box,
-  Button,
-  FormControl,
-  InputLabel,
-  MenuItem,
-  Select,
-} from "@mui/material";
+import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
 import useNoticias from "../hooks/useNoticias";
 
 const CATEGORIAS = [
